@@ -579,3 +579,95 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Host Section */
+.host-section {
+    background-color: #0F012B;
+    padding: 100px 24px;
+    color: #ffffff;
+}
+
+.host-card {
+    background-color: #1A0B3C;
+    border-radius: 40px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.host-image-wrapper {
+    flex-shrink: 0;
+}
+
+.host-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.host-name {
+  text-align: start;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.host-bio {
+  text-align: start;
+    color: #adb4be;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    border-color: #A855F7; /* Hover border matches gradient theme */
+    background: rgba(168, 85, 247, 0.1);
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 24px;
+        gap: 32px;
+    }
+
+    .host-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
